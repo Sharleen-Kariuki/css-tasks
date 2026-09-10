@@ -4,6 +4,55 @@
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Task 2 Log In Page</h1>
+    <div class="container">
+        <img src="./assets/zebra.jpeg" alt="Zebra in the mountains" class="background-image">
+        <nav>
+            <img class="logo" src="./assets/bng_logo-Photoroom.png" alt="Logo">
+        </nav>
+
+        <footer>
+            <p>&copy; All Rights Reserved</p>
+        </footer>
+    </div>
+    <div class="login-section">
+        <div class="login-heading">
+          <div class="login-icon">
+            <img src="./assets/user.png" alt="userprofile" class="user">
+          </div>
+          <div class="login-text">
+            <h1>User Login</h1>
+          </div>
+        </div>
+      
+        <p class="login-instruction">Enter your username and password</p>
+      
+        <form class="login-form" action="" method="post">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" class="toggle-password" id="togglePassword" aria-label="Show password" title="Toggle password visibility">
+              <svg class="eye-icon eye-open" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <svg class="eye-icon eye-closed" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+              </svg>
+            </button>
+          </div>
+      
+          <div class="button-wrapper">
+            <button type="submit" class="btn-submit">Sign In</button>
+          </div>
+        </form>
+      </div>
+
+      <script src="./index.js"></script>
 </body>
 </html>
