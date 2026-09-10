@@ -1,3 +1,202 @@
-h1 {
-    color: orange;
-}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: hsl(221, 100%, 96%);;
+    position: relative; /* Anchor for centered container */
+  }
+  
+  /* Centered Main Card Container */
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 440px;
+    background:hsl(0, 0,100%);
+    border-radius: 28px;
+    box-shadow: 0 20px 45px hsla(226, 38%, 39%, 0.15);
+  }
+  
+  /* Left Result Panel */
+  .panel-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 28px;
+    background: linear-gradient(180deg, hsl(252, 100%, 63%) 0%, hsl(242, 80%, 54%) 100%);
+    text-align: center;
+  }
+  
+  .result-title {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  /* Gradient Score Circle */
+  .score-circle {
+    position: absolute;
+    top: 86px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, hsl(256, 72%, 46%) 0%, hsla(241, 72%, 46%, 0) 100%);
+  }
+  
+  .score-circle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  .score-num {
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  
+  .score-total {
+    display: block;
+    margin-top: 4px;
+    color: hsl(252, 100%, 63%);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* Bottom Text in Left Panel */
+  .result-feedback {
+    position: absolute;
+    bottom: 40px;
+    left: 36px;
+    right: 36px;
+  }
+  
+  .feedback-heading {
+    color: hsl(0, 0%, 100%);
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-text {
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  /* Right Summary Panel */
+  .panel-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    padding: 36px 32px;
+  }
+  
+  .summary-title {
+    color: hsl(224, 30%, 27%);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  
+  /* Summary Rows */
+  .stat-row {
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 12px;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .stat-label {
+    position: absolute;
+    left: 16px;
+  }
+  
+  .stat-value {
+    position: absolute;
+    right: 16px;
+    color: hsl(220, 10%, 65%);
+  }
+  
+  .stat-value strong {
+    color: hsl(224, 30%, 27%);
+  }
+  
+  /* Position and size the icons inside each row */
+.stat-row img {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%); /* Centers the image vertically */
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  
+  /* Shift the label over so it doesn't overlap the image */
+  .stat-label {
+    position: absolute;
+    left: 46px; /* 16px left gap + 20px icon width + 10px spacing */
+  }
+  /* Row-specific colors */
+  .row-reaction {
+    background-color: hsl(6, 100%, 98%);
+    color: hsl(0, 100%, 67%);
+  }
+  
+  .row-memory {
+    background-color: hsl(42, 100%, 97%);
+    color: hsl(39, 100%, 56%);
+  }
+  
+  .row-verbal {
+    background-color: hsl(162, 73%, 97%);
+    color: hsl(166, 100%, 37%);
+  }
+  
+  .row-visual {
+    background-color: hsl(240, 71%, 97%);
+    color: hsl(234, 85%, 45%);
+  }
+  
+  /* Continue Button */
+  .btn-continue {
+    position: absolute;
+    bottom: 36px;
+    left: 32px;
+    right: 32px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    background: linear-gradient(180deg, hsl(252, 100%, 63%) 0%, hsl(242, 80%, 54%) 100%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
