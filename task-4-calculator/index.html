@@ -1,9 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
-<head >
-    <title>Task 4 Calculator</title>
-    <link href="index.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator App</title>
+  <!-- Using flex box -->
+  <link href="index.css" rel="stylesheet">
+  <!-- Using Grid Css -->
+  <link href="index1.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Task 4 Calculator</h1>
+
+  <main class="calculator">
+    <!-- Top Header -->
+    <header class="calc-header">
+      <h1 class="logo">calc</h1>
+      <div class="theme-switcher">
+        <span class="theme-label">THEME</span>
+        <div class="toggle-wrapper">
+          <div class="theme-numbers">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="toggle-track">
+            <div class="toggle-circle"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Screen Display -->
+    <div class="display">
+      <span class="display-text" id="display">399,981</span>
+    </div>
+
+    <!-- Keypad Grid -->
+    <div class="keypad">
+      <button class="key" data-value="7">7</button>
+      <button class="key" data-value="8">8</button>
+      <button class="key" data-value="9">9</button>
+      <button class="key key-func" id="btn-del">DEL</button>
+
+      <button class="key" data-value="4">4</button>
+      <button class="key" data-value="5">5</button>
+      <button class="key" data-value="6">6</button>
+      <button class="key" data-value="+">+</button>
+
+      <button class="key" data-value="1">1</button>
+      <button class="key" data-value="2">2</button>
+      <button class="key" data-value="3">3</button>
+      <button class="key" data-value="-">-</button>
+
+      <button class="key" data-value=".">.</button>
+      <button class="key" data-value="0">0</button>
+      <button class="key" data-value="/">/</button>
+      <button class="key" data-value="*">x</button>
+
+      <button class="key key-func span-two" id="btn-reset">RESET</button>
+      <button class="key key-equal span-two" id="btn-equal">=</button>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Centering with Grid place-items */
+  body {
+    min-height: 100vh;
+    background-color: hsl(222, 26%, 31%);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+  }
+  
+  .calculator {
+    width: 100%;
+    max-width: 440px;
+    display: grid;
+    row-gap: 20px;
+  }
+  
+  /* 1. Header & Theme Switcher (Grid) */
+  .calc-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+  
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .theme-switcher {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: end;
+    column-gap: 18px;
+  }
+  
+  .theme-label {
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 4px;
+  }
+  
+  .toggle-wrapper {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 40px;
+  }
+  
+  .theme-numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .toggle-track {
+    width: 54px;
+    height: 20px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 12px;
+    padding: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  
+  .toggle-circle {
+    width: 14px;
+    height: 14px;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    grid-column: 1; /* Position 1 for theme 1 */
+  }
+  
+  /* 2. Display (Grid) */
+  .display {
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 8px;
+    padding: 30px 24px;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .display-text {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    word-break: break-all;
+  }
+  
+  /* 3. Keypad (Explicit 4-column Grid) */
+  .keypad {
+    background-color: hsl(223, 31%, 20%);
+    padding: 24px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .key {
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    font-size: 26px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 0 hsl(28, 16%, 65%);
+    display: grid;
+    place-items: center;
+    user-select: none;
+  }
+  
+  .key:hover {
+    background-color: #ffffff;
+  }
+  
+  .key:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 hsl(28, 16%, 65%);
+  }
+  
+  /* Grid Column Spanning */
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .key-func {
+    background-color: hsl(225, 21%, 49%);
+    color: #ffffff;
+    font-size: 18px;
+    box-shadow: 0 4px 0 hsl(224, 28%, 35%);
+  }
+  
+  .key-equal {
+    background-color: hsl(6, 63%, 50%);
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 0 4px 0 hsl(6, 70%, 34%);
+  }
