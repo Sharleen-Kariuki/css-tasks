@@ -1,9 +1,87 @@
+<!DOCTYPE html>
 <html lang="en">
-<head >
-    <title>Task Heading</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Toolbar</title>
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Task Heading</h1>
+    <main class="calendar-app">
+        <header class="top">
+            <div class="button-group left">
+                <button type="button">Today</button>
+                <button type="button">Back</button>
+                <button type="button">Next</button>
+            </div>
+            
+            <div class="center">
+                <h2>January 2025</h2>
+            </div>
+            
+            <div class="button-group right">
+                <button type="button" class="active">Month</button>
+                <button type="button">Week</button>
+                <button type="button">Day</button>
+            </div>
+        </header>
+
+        <div class="calendar">
+            <!-- Day Headers -->
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+        
+            <!-- Date Cells (7 columns x 5 rows) -->
+            <div class="days-grid">
+                <!-- Previous Month (Dec 2024) padding -->
+                <div class="day-cell other-month"><span class="day-num">29</span></div>
+                <div class="day-cell other-month"><span class="day-num">30</span></div>
+                <div class="day-cell other-month"><span class="day-num">31</span></div>
+        
+                <!-- January 2025 -->
+                <div class="day-cell"><span class="day-num">01</span></div>
+                <div class="day-cell"><span class="day-num">02</span></div>
+                <div class="day-cell"><span class="day-num">03</span></div>
+                <div class="day-cell"><span class="day-num">04</span></div>
+                <div class="day-cell"><span class="day-num">05</span></div>
+                <div class="day-cell"><span class="day-num">06</span></div>
+                <div class="day-cell"><span class="day-num">07</span></div>
+                <div class="day-cell"><span class="day-num">08</span></div>
+                <div class="day-cell"><span class="day-num">09</span></div>
+                <div class="day-cell"><span class="day-num">10</span></div>
+                <div class="day-cell"><span class="day-num">11</span></div>
+                <div class="day-cell"><span class="day-num">12</span></div>
+                <div class="day-cell"><span class="day-num">13</span></div>
+                <div class="day-cell"><span class="day-num">14</span></div>
+                <div class="day-cell"><span class="day-num">15</span></div>
+                <div class="day-cell"><span class="day-num">16</span></div>
+                <div class="day-cell"><span class="day-num">17</span></div>
+                <div class="day-cell"><span class="day-num">18</span></div>
+                <div class="day-cell"><span class="day-num">19</span></div>
+                <div class="day-cell"><span class="day-num">20</span></div>
+                <div class="day-cell"><span class="day-num">21</span></div>
+                <div class="day-cell"><span class="day-num">22</span></div>
+                <div class="day-cell"><span class="day-num">23</span></div>
+                <div class="day-cell"><span class="day-num">24</span></div>
+                <div class="day-cell"><span class="day-num">25</span></div>
+                <div class="day-cell"><span class="day-num">26</span></div>
+                <div class="day-cell"><span class="day-num">27</span></div>
+                <div class="day-cell"><span class="day-num">28</span></div>
+                <div class="day-cell"><span class="day-num">29</span></div>
+                <div class="day-cell"><span class="day-num">30</span></div>
+                <div class="day-cell"><span class="day-num">31</span></div>
+        
+                <!-- Next Month (Feb 2025) padding -->
+                <div class="day-cell other-month"><span class="day-num">1</span></div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

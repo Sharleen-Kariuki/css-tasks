@@ -1,3 +1,148 @@
-h1 {
-    color: orange;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e2e8f0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 16px;
+}
+
+/* Card container wrapping the calendar */
+.calendar-app {
+    width: 100%;
+    max-width: 950px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Header bar with space-between for robust alignment */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 16px;
+}
+
+.center h2 {
+    font-size: 15px;
+    color: #6f6e6e;
+}
+
+/* Segmented button toolbar style */
+.button-group {
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #cbd5e1;
+}
+
+.button-group button {
+    font-size: 14px;
+    padding: 8px 16px;
+    background: #ffffff;
+    border: none;
+    border-right: 1px solid #cbd5e1;
+    cursor: pointer;
+    color: #475569;
+   
+}
+
+.button-group button:last-child {
+    border-right: none;
+}
+
+.button-group button:hover {
+    background: #f1f5f9;
+}
+
+.button-group button.active {
+    background: #e2e8f0;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+
+/* Calendar Wrapper */
+.calendar {
+    margin-top: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Weekday header row */
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+    font-weight: 600;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.weekdays div {
+    padding: 10px 0;
+}
+
+/* 7-column month grid */
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #e2e8f0; /* Color for grid border lines */
+    gap: 1px; /* Creates clean cell division lines without double borders */
+}
+
+/* Individual day cells */
+.day-cell {
+    background-color: #ffffff;
+    min-height: 90px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: background-color 0.15s ease;
+}
+
+.day-cell:hover {
+    background-color: #f8fafc;
+}
+
+.day-num {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e293b;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Days outside the current month */
+.day-cell.other-month {
+    background-color: #fcfcfd;
+}
+
+.day-cell.other-month .day-num {
+    color: #cbd5e1;
+}
+
+/* Highlight for the active / current day */
+.day-cell.today .day-num {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
 }
