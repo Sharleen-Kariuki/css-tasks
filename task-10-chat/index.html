@@ -1,9 +1,232 @@
+<!DOCTYPE html>
 <html lang="en">
-<head >
-    <title>Task Heading</title>
-    <link href="index.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOIN - Messages</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <h1>Task Heading</h1>
+  <div class="app-window">
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="header-left">
+        <div class="brand-logo">JOIN</div>
+        <div class="global-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search for jobs, candidates, ..." />
+        </div>
+      </div>
+      <div class="header-right">
+        <button class="btn-primary"><i class="fa-solid fa-plus"></i> Create new job</button>
+        <button class="icon-btn bell-btn"><i class="fa-regular fa-bell"></i></button>
+        <div class="user-pill">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Profile" class="avatar avatar-sm" />
+          <span class="user-name">Julian H.</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <div class="app-body">
+      <!-- 1. Left Navigation Sidebar -->
+      <aside class="sidebar">
+        <div class="company-badge">
+          <div class="company-icon"><i class="fa-solid fa-cloud"></i></div>
+          <span>Fintory</span>
+        </div>
+
+        <nav class="nav-menu">
+          <a href="#" class="nav-link"><i class="fa-solid fa-table-cells-large"></i><span>Dashboard</span></a>
+          <a href="#" class="nav-link"><i class="fa-regular fa-file-lines"></i><span>Jobs</span></a>
+          <a href="#" class="nav-link"><i class="fa-solid fa-user-group"></i><span>Candidates</span></a>
+          <a href="#" class="nav-link active"><i class="fa-solid fa-comment-dots"></i><span>Messages</span></a>
+          <a href="#" class="nav-link"><i class="fa-regular fa-building"></i><span>Company</span></a>
+          <a href="#" class="nav-link"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+        </nav>
+      </aside>
+
+      <!-- 2. Middle Message List Sidebar -->
+      <section class="chat-list-panel">
+        <div class="chat-list-header">
+          <div class="title-wrap">
+            <h2>Messages</h2>
+            <span class="badge-count">25</span>
+          </div>
+          <div class="list-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="filter-dropdown">
+            <span>All Messages</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="conversation-threads">
+          <!-- Active thread -->
+          <div class="thread-item active">
+            <div class="unread-dot"></div>
+            <div class="avatar-initials blue">JH</div>
+            <div class="thread-content">
+              <div class="thread-top">
+                <span class="sender-name">Julian H.</span>
+                <span class="time-stamp">2h ago</span>
+              </div>
+              <p class="role-tag">applied for <a href="#">UI / UX Designer</a></p>
+              <p class="preview-text">Julian Herbst: Hi, I have a quick question regarding my application on the open ...</p>
+            </div>
+          </div>
+
+          <!-- Thread 2 -->
+          <div class="thread-item">
+            <div class="unread-dot"></div>
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=80" alt="Ramona" class="avatar avatar-md" />
+            <div class="thread-content">
+              <div class="thread-top">
+                <span class="sender-name">Ramona J.</span>
+                <span class="time-stamp">12h ago</span>
+              </div>
+              <p class="role-tag">applied for <a href="#">UI / UX Designer</a></p>
+              <p class="preview-text">Lena Nattke: Hi Ramona, we just reviewed your application and we're happy to ...</p>
+            </div>
+          </div>
+
+          <!-- Thread 3 -->
+          <div class="thread-item">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop&q=80" alt="Dominik" class="avatar avatar-md" />
+            <div class="thread-content">
+              <div class="thread-top">
+                <span class="sender-name">Dominik W.</span>
+                <span class="time-stamp">2 days ago</span>
+              </div>
+              <p class="role-tag">applied for <a href="#">Teamlead Design</a></p>
+              <p class="preview-text">Lena Nattke: Hi Dominik, we just reviewed your application and we're happy to ...</p>
+            </div>
+          </div>
+
+          <!-- Thread 4 -->
+          <div class="thread-item">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Kevin" class="avatar avatar-md" />
+            <div class="thread-content">
+              <div class="thread-top">
+                <span class="sender-name">Kevin M.</span>
+                <span class="time-stamp">2 days ago</span>
+              </div>
+              <p class="role-tag">applied for <a href="#">A very very long position that...</a></p>
+              <p class="preview-text">Kevin Meyers: Good morning, I just wanted to share my design challenge results ...</p>
+            </div>
+          </div>
+
+          <!-- Thread 5 -->
+          <div class="thread-item">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=80" alt="Ramona" class="avatar avatar-md" />
+            <div class="thread-content">
+              <div class="thread-top">
+                <span class="sender-name">Ramona J.</span>
+                <span class="time-stamp">1 week ago</span>
+              </div>
+              <p class="role-tag">applied for <a href="#">UI / UX Designer</a></p>
+              <p class="preview-text">Lena Nattke: Hi Ramona, we just reviewed your application and we're happy to ...</p>
+            </div>
+          </div>
+
+          <!-- Thread 6 -->
+          <div class="thread-item">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop&q=80" alt="Dominik" class="avatar avatar-md" />
+            <div class="thread-content">
+              <div class="thread-top">
+                <span class="sender-name">Dominik W.</span>
+                <span class="time-stamp">09.03.20</span>
+              </div>
+              <p class="role-tag">applied for <a href="#">Teamlead Design</a></p>
+              <p class="preview-text">Lena Nattke: Hi Dominik, we just reviewed your application and we're happy to ...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Right Conversation Detail Pane -->
+      <section class="chat-main-panel">
+        <!-- Chat Detail Top Bar -->
+        <div class="chat-header">
+          <div class="candidate-meta">
+            <h3>Julian Herbst</h3>
+            <p>applied for <a href="#">UI / UX Designer</a></p>
+          </div>
+          <div class="candidate-actions">
+            <button class="btn-outline-primary">View Profile</button>
+            <div class="select-badge">
+              <span>Applied</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <button class="icon-tool thumbs"><i class="fa-solid fa-thumbs-up"></i></button>
+            <button class="icon-tool"><i class="fa-solid fa-xmark"></i></button>
+            <button class="icon-tool"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          </div>
+        </div>
+
+        <!-- Scrollable Conversation Window -->
+        <div class="chat-feed">
+          <div class="date-divider"><span>09.03.20</span></div>
+
+          <!-- Candidate Message -->
+          <div class="message-row candidate">
+            <div class="avatar-initials blue">JH</div>
+            <div class="bubble-wrap">
+              <div class="bubble white-card">
+                <h4>Julian Herbst</h4>
+                <p>Hi Lena, I have a quick question regarding my application on the open position "UI / UX Designer":</p>
+                <p>How long does it usually take for you to review a application? I have some options right now but I would like to consider your company as well but I have no response since I applied. Please just give me a quick message.</p>
+                <p class="signoff">Thanks and best regards,<br />Julian Herbst</p>
+              </div>
+              <span class="bubble-meta">Message sent 1 week ago</span>
+            </div>
+          </div>
+
+          <div class="date-divider"><span>Today</span></div>
+
+          <!-- Recruiter Reply Message -->
+          <div class="message-row recruiter">
+            <div class="bubble-wrap">
+              <div class="bubble blue-card">
+                <p>Hi Julian,</p>
+                <p>sorry for the delayed response but we're currently really busy screening a lot of new candidates. So to answer your question: Usually we need around 1 week to review the applications and I just took a look into yours.</p>
+                <p>We like what we see and would like to send you our Design Challenge - that's the way we see how qualified you are. The timeframe is a normal working day (~8 hours).</p>
+                <p>Please finish it within the next 7 days. If you have any questions feel free to message me here.</p>
+              </div>
+              <span class="bubble-meta text-right">Message sent just now</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Recruiter" class="avatar avatar-md" />
+          </div>
+        </div>
+
+        <!-- Chat Input & Rich Text Controls -->
+        <div class="chat-composer">
+          <textarea placeholder="Write your message"></textarea>
+          <div class="composer-toolbar">
+            <div class="toolbar-tools">
+              <button title="Bold"><i class="fa-solid fa-bold"></i></button>
+              <button title="Italic"><i class="fa-solid fa-italic"></i></button>
+              <button title="List"><i class="fa-solid fa-list-ul"></i></button>
+              <button title="Ordered List"><i class="fa-solid fa-list-ol"></i></button>
+              <button title="Code"><i class="fa-solid fa-code"></i></button>
+              <button title="Link"><i class="fa-solid fa-link"></i></button>
+            </div>
+            <div class="toolbar-actions">
+              <button class="icon-tool"><i class="fa-regular fa-face-smile"></i></button>
+              <button class="icon-tool"><i class="fa-solid fa-paperclip"></i></button>
+              <div class="split-btn">
+                <button class="btn-send">Send</button>
+                <button class="btn-split-arrow"><i class="fa-solid fa-chevron-down"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
