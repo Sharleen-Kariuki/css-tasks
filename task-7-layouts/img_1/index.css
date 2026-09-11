@@ -1,0 +1,115 @@
+/* body{
+  background:yellow ;
+  margin: 0;
+}
+.Header{
+  border: 4px solid rgb(251, 250, 250);
+  width: 100vw;
+  height: 80px;
+}
+p{
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 80vh;
+  
+}
+.Nav1{
+  display: flex;
+  flex-direction: column;
+  border: 4px solid rgb(251, 250, 250);
+  width: 25vw;
+  height: 80vh;
+}
+.Article1{
+  display: flex;
+  flex-direction: column;
+  border: 4px solid rgb(251, 250, 250);
+  width: 70vw;
+  height: 80vh;
+}
+.Ads1{
+  display: flex;
+  flex-direction: column;
+  border: 4px solid rgb(251, 250, 250);
+  width: 25vw;
+  height: 80vh;
+}
+.Footer{
+  display: flex;
+  border: 4px solid rgb(251, 250, 250);
+  width: 100vw;
+  height: 80px;
+}
+.Footer1 {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+} */
+
+
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  background: yellow;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  border: 4px solid rgb(251, 250, 250);
+  height: 80px;
+  width: 100%;
+}
+
+p {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex: 1; 
+  padding: 8px 0;
+}
+
+.Nav {
+  flex: 1; /* Takes 1 part of the width (~20%) */
+  border: 4px solid rgb(251, 250, 250);
+  padding: 10px;
+}
+
+.Article {
+  flex: 3; /* Takes 3 parts of the width (~60%) */
+  border: 4px solid rgb(251, 250, 250);
+  padding: 10px;
+}
+
+.Ads {
+  flex: 1; /* Takes 1 part of the width (~20%) */
+  border: 4px solid rgb(251, 250, 250);
+  padding: 10px;
+}
+
+.Footer {
+  border: 4px solid rgb(251, 250, 250);
+  height: 80px;
+  width: 100%;
+}
+
+.Footer1 {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+}

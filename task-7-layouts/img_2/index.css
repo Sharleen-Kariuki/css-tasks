@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(123, 199, 10);
+    font-family: Arial, sans-serif;
+}
+.container{
+    display: flex;
+    
+}
+.Section-One{
+    border: 3px solid rgb(255, 255, 255);
+    width: 25%;
+    height: 100vh;
+}
+p{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+span{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.Section-Two{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+Header{
+    display: flex;
+    flex: 1;
+    border: 3px solid rgb(255, 255, 255);
+}
+article{
+    display: flex;
+    flex: 5;
+    border: 3px solid rgb(255, 255, 255);
+}
+Aside{
+    display: flex;
+    flex: 1;
+    border: 3px solid rgb(255, 255, 255);
+}
+Footer{
+    display: flex;
+    flex: 1;
+    border: 3px solid rgb(255, 255, 255);
+}
