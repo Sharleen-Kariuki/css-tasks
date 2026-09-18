@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   body {
@@ -21,7 +21,7 @@
     height: 440px;
     background:hsl(0, 0,100%);
     border-radius: 28px;
-    box-shadow: 0 20px 45px hsla(226, 38%, 39%, 0.15);
+    box-shadow: 0 20px 45px hsla(0, 0%, 0%, 0.15);
   }
   
   /* Left Result Panel */

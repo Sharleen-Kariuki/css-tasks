@@ -12,7 +12,7 @@ body{
     
 }
 .Section-One{
-    border: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
     width: 25%;
     height: 100vh;
 }
@@ -34,12 +34,14 @@ span{
 Header{
     display: flex;
     flex: 1;
-    border: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 article{
     display: flex;
     flex: 5;
-    border: 3px solid rgb(255, 255, 255);
+    /* border-top: 4px solid rgb(255, 255, 255); */
+    border: 4px solid rgb(255, 255, 255);
 }
 Aside{
     display: flex;
@@ -49,5 +51,6 @@ Aside{
 Footer{
     display: flex;
     flex: 1;
-    border: 3px solid rgb(255, 255, 255);
+    border-top: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
 }
